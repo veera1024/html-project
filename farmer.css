@@ -1,0 +1,868 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    border: none;
+    /* font-family: ; */
+}
+ul{
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: medium;
+    font-style: italic;
+li{
+    display: flex;
+    justify-content: left;
+}
+}
+*l1{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+*l3{
+    display: flex;
+    justify-content: right;
+}
+
+
+img {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    border: 4px solid black;
+    border-radius: 5px;
+
+}
+h2{
+    position: absolute;
+    top: 10pc;
+    color: white;
+    left: 8pc;
+}
+h1{
+    position: absolute;
+    top: 13pc;
+    color: white;
+    left: 8pc;
+    font-size: xx-large;
+
+}
+p{
+    position: absolute;
+    top: 26pc;
+    color: white;
+    left: 8pc;
+    font-style: italic;
+}
+#btn1{
+    position: absolute;
+    top: 30pc ;
+    left: 8pc;
+    background-color: lightgreen;
+    size: 30pc;
+}
+#btn2{
+    position: absolute;
+    top: 30pc;
+    left: 18pc;
+    size: 30pc;
+}
+#p1{
+    position: absolute;
+    top: 32pc;
+    left: 8pc;
+}
+#p2{
+    position: absolute;
+    top: 32pc;
+    left: 18pc;
+}
+#p3{
+    position: absolute;
+    top: 32pc;
+    left: 26pc;
+}
+#a1{
+    position: absolute;
+    top: 40pc;
+    color: black;
+}
+#a2{
+    position: absolute;
+    top: 44pc;
+    color:black;
+}
+#a3{
+    position: absolute;
+    top: 50pc;
+    color: black;
+}
+h3{
+    position: absolute;
+    top: 55pc;
+    color: black;
+    left: 8pc;
+}
+#p4{
+    position: absolute;
+    top: 58pc;
+    color: black;
+    left: 8pc;
+}
+#b1{
+    position: absolute;
+    top: 55pc;
+    color: black;
+    left: 31pc;
+}
+#p5{
+    position: absolute;
+    top: 58pc;
+    color: black;
+    left: 32pc;
+}
+#b2{
+    position: absolute;
+    top: 55pc;
+    color: black;
+    left: 60pc;
+}
+#p6{
+    position: absolute;
+    top: 58pc;
+    color: black;
+    left: 60pc;
+}
+#p7{
+    position: absolute;
+    top: 65pc;
+    color: green;
+    left: 8pc;
+}
+#r1{
+    position: absolute;
+    top: 67pc;
+    color: black;
+    left: 8pc;
+}
+#p8{
+    position: absolute;
+    top: 72pc;
+    color: black;
+    left: 8pc;
+}
+#t1{
+    position: absolute;
+    top: 74pc;
+    left: 8pc;
+    
+
+}
+#p9{
+    position: absolute;
+    top: 1pc;
+    left: 1pc;
+    color: lightgreen;
+}
+#p10{
+    position: absolute;
+    top: 3pc;
+    left: 1pc;
+    color: white;
+}
+#p11{
+    position: absolute;
+    top: 5pc;
+    left: 1pc;
+    color: lightgreen;
+}
+#p12{
+    position: absolute;
+    top: 7pc;
+    left: 1pc;
+    color: white;
+}
+#p13{
+    position: absolute;
+    top: 9pc;
+    left: 1pc;
+    color: white;
+}
+#p14{
+    position: absolute;
+    top: 11pc;
+    left: 1pc;
+    color: white;
+}
+#t2{
+   position: absolute;
+    top: 74pc;
+    left: 37pc;
+    
+    
+}
+#p15{
+    position: absolute;
+    top: 75pc;
+    left: 38pc;
+    color: black;
+}
+#p16{
+    position: absolute;
+    top: 77pc;
+
+    left: 38pc;
+    color: black;
+    font-size: larger;
+}
+#p17{
+    position: absolute;
+    top: 79pc;
+    left: 38pc;
+    color: black;
+}
+#p18{
+    position: absolute;
+    top: 81pc;
+    left: 38pc;
+    color: black;
+}
+#p19{
+    position: absolute;
+    top: 83pc;
+    left: 38pc;
+    color: black;
+}
+#p20{
+    position: absolute;
+    top: 85pc;
+    left: 38pc;
+    color: black;
+}      
+#t3{
+   position: absolute;
+    top: 74pc;
+    right: 10pc;
+}   
+#p21{
+    position: absolute;
+    top: 75.1pc;
+    right: 26pc;
+} 
+#p22{
+    position: absolute;
+    top: 77pc;
+    right: 23pc;
+    font-size: larger;
+}
+#p23{
+    position: absolute;
+    top: 79pc;
+    right: 15pc;
+}
+#p24{
+    position: absolute;
+    top: 81pc;
+    right: 14pc;
+}
+#p25{
+    position: absolute;
+    top: 82pc;
+    right: 11pc;
+}
+#p26{
+    position:absolute;
+    top: 84pc;
+    right: 11pc;
+}
+#c1{
+    position: absolute;
+    top: 95pc;
+    left: 8pc;
+    color: black;
+    font-style: italic;
+}
+#c2{
+    position: absolute;
+    top: 100pc;
+    left: 8pc;
+    color: black;
+}
+#c3{
+    position: absolute;
+    top: 105pc;
+    left: 8pc;
+    color: black;
+}
+#t4{
+    position: absolute;
+    top: 110pc;
+    left: 8pc;
+}
+#c4{
+    position: absolute;
+    top: 110pc;
+    left: 8pc;
+    width: 250px;
+    height: 250px;
+}
+#c5{
+    position: absolute;
+    top: 127pc;
+    left: 8pc;
+}
+#c6{
+    position: absolute;
+    top: 129pc;
+    left: 8pc;
+    color: black;
+
+}
+#c7{
+    position: absolute;
+    top: 131pc;
+    left: 8pc;
+    color: black;
+}
+#c8{
+    position: absolute;
+    top: 110pc;
+    left: 29pc;
+    width: 250px;
+    height: 250px;
+}
+#c9{
+    position: absolute;
+    top: 127pc;
+    left: 29pc;
+    color: black;
+}
+#c10{
+    position: absolute;
+    top: 128.9pc;
+    left: 29pc;
+    color: black;
+}
+#c11{
+    position: absolute;
+    top: 131pc;
+    left: 29pc;
+    color: black;
+}
+#c12{
+    position: absolute;
+    top: 110pc;
+    left: 50pc;
+    width: 250px;
+    height: 250px;
+}
+#c13{
+    position: absolute;
+    top: 129pc;
+    left: 50pc;
+    color: black;
+}
+#c14{
+    position: absolute;
+    top: 127pc;
+    left: 50pc;
+    color: black;
+}
+#c15{
+    position: absolute;
+    top: 131pc;
+    left: 50pc;
+    color: black;
+}
+#c16{
+    position: absolute;
+    top: 110pc;
+    left: 72pc;
+    width: 250px;
+    height: 250px;
+}
+#c17{
+    position: absolute;
+    top: 127pc;
+    left: 72pc;
+    color: black;
+}
+#c18{
+    position: absolute;
+    top: 129pc;
+    left: 72pc;
+    color: black;
+}
+#c19{
+    position: absolute;
+    top: 132pc;
+    left: 72pc;
+    color: black;
+}
+#c20{
+    position: absolute;
+    top: 139pc;
+    left: 8pc;
+    color: black;
+}
+#d1{
+    position: absolute;
+    top: 150pc;
+    left: 8pc;
+    color: black;
+}
+#t8{
+    position: absolute;
+    top: 140pc;
+    background-color: whitesmoke;
+}
+#d2{
+    position: absolute;
+    top: 145pc;
+    left: 8pc;
+    width: 260px;
+    height: 160px;
+    color: black;
+    background-color: gray;
+}
+#d3{
+    position: absolute;
+    top: 147pc;
+    left: 8pc;
+    color: black;
+}
+#d4{
+    position: absolute;
+    top: 149pc;
+    left: 8pc;
+    color: black;
+}
+#t10{
+    position: absolute;
+    top: 145pc;
+    left: 35pc;
+}
+#d5{
+    position: absolute;
+    top: 145pc;
+    left: 35pc;
+    color: black;
+}
+#d6{
+    position: absolute;
+    top: 147pc;
+    left: 35pc;
+    color: black;
+}
+#d7{
+    position: absolute;
+    top: 149pc;
+    left: 35.1pc;
+    color: black;
+}
+#t11{
+    position: absolute;
+    top: 145pc;
+    left: 60pc;
+}
+#d8{
+    position: absolute;
+    top: 145pc;
+    left: 60pc;
+    color: black;
+}
+#d9{
+    position: absolute;
+    top: 147pc;
+    left: 60pc;
+    color: black;
+}
+#d10{
+    position: absolute;
+    top: 149pc;
+    left: 60pc;
+    color: black;
+}
+#t12{
+    position: absolute;
+    top: 159pc;
+    left: 8pc;
+}
+#c1{
+    position: absolute;
+    top: 159pc;
+    left: 8pc;
+    color: black;
+}
+#c2{
+    position: absolute;
+    top: 161pc;
+    left: 8pc;
+    color: black;
+}
+#c3{
+    position: absolute;
+    top: 163pc;
+    left: 8pc;
+    color: black;
+}
+#t13{
+    position: absolute;
+    top: 159pc;
+    left: 35pc;
+}
+#e4{
+    position: absolute;
+    top: 159pc;
+    left: 35pc;
+    color: black;
+}
+#e5{
+    position: absolute;
+    top: 161pc;
+    left: 35pc;
+    color: black;
+}
+#e6{
+    position: absolute;
+    top: 163pc;
+    left: 35pc;
+    color: black;
+}
+#t14{
+    position: absolute;
+    top: 159pc;
+    left: 61pc;
+}
+#e7{
+    position: absolute;
+    top: 159pc;
+    left: 61pc;
+    color: black;
+}
+#e8{
+    position: absolute;
+    top: 161pc;
+    left: 61pc;
+    color: black;
+}
+#e9{
+    position: absolute;
+    top: 163pc;
+    left: 61pc;
+    color: black;
+}
+#t15{
+    position: absolute;
+    top: 170pc;
+    left: 0pc;
+    width: 1530px;
+    height: 500px;
+}
+#e10{
+    position: absolute;
+    top: 172pc;
+    left: 8.3pc;
+    color: black;
+}
+#s1{
+    position: absolute;
+    top: 174pc;
+    left: 8pc;
+    color: black;
+}
+#s2{
+    position: absolute;
+    top: 177pc;
+    left: 8pc;
+    color: black;
+}
+#t16{
+    position: absolute;
+    top: 179pc;
+    left: 8pc;
+}
+#s3{
+    position: absolute;
+    top: 180pc;
+    left: 8pc;
+    color: black;
+}
+#s4{
+    position: absolute;
+    top: 181pc;
+    left: 8pc;
+    color: black;
+}
+#s5{
+    position: absolute;
+    top: 183pc;
+    left: 8pc;
+    color: black;
+}
+#s6{
+    position: absolute;
+    top: 185pc;
+    left: 8pc;
+    color: black;
+}
+#s7{
+    position: absolute;
+    top: 187pc;
+    left: 8pc;
+    color: black;
+}
+#s8{
+    position: absolute;
+    top: 189pc;
+    left: 8pc;
+    color: black;
+}
+#s9{
+    position: absolute;
+    top: 191pc;
+    left: 8pc;
+    color: black;
+}
+#s10{
+    position: absolute;
+    top: 193pc;
+    left: 8pc;
+    color: black;
+}
+#s11{
+    position: absolute;
+    top: 194.5pc;
+    left: 8pc;
+    color: black;
+}
+#s12{
+    position: absolute;
+    top: 197.2pc;
+    left: 8pc;
+    color: black;
+}
+#t17{
+    position: absolute;
+    top: 179pc;
+    left: 35pc;
+}
+#v1{
+    position: absolute;
+    top: 180pc;
+    left: 35pc;
+    color: black;
+}
+#v2{
+    position: absolute;
+    top: 182pc;
+    left: 35pc;
+    color: black;
+}
+#v3{
+    position: absolute;
+    top: 184pc;
+    left: 35pc;
+    color: black;
+}
+#v4{
+    position: absolute;
+    top: 186pc;
+    left: 35pc;
+    color: black;
+}
+#v5{
+    position: absolute;
+    top: 188pc;
+    left: 35pc;
+    color: black;
+}
+#v6{
+    position: absolute;
+    top: 190pc;
+    left: 35pc;
+    color: black;
+}
+#v7{
+    position: absolute;
+    top: 192pc;
+    left: 35pc;
+    color: black;
+}
+#v8{
+    position: absolute;
+    top: 194pc;
+    left: 35pc;
+    color: black;
+}
+#v9{
+    position: absolute;
+    top: 196pc;
+    left: 35pc;
+    color: black;
+}
+#t18{
+    position: absolute;
+    top: 179pc;
+    left: 61pc;
+    width: 270px;
+    height: 250px;
+}
+#v10{
+    position: absolute;
+    top: 180pc;
+    left: 61pc;
+    color: black;
+}
+#v11{
+    position: absolute;
+    top: 182pc;
+    left: 61pc;
+    color: black;
+}
+#v12{
+    position: absolute;
+    top: 184pc;
+    left: 61pc;
+    color: black;
+}
+#v13{
+    position: absolute;
+    top: 186pc;
+    left: 61pc;
+    color: black;
+}
+#v14{
+    position: absolute;
+    top: 188pc;
+    left: 61pc;
+    color: black;
+}
+#v15{
+    position: absolute;
+    top: 190pc;
+    left: 61pc;
+    color: black;
+}
+#v16{
+    position: absolute;
+    top: 192pc;
+    left: 61pc;
+    color: black;
+}
+#v17{
+    position: absolute;
+    top: 194pc;
+    left: 61pc;
+    color: black;
+}
+#v18{
+    position: absolute;
+    top: 196pc;
+    left: 61pc;
+    color: black;
+}
+#v19{
+    position: absolute;
+    top: 197pc;
+    left: 61pc;
+    color: black;
+}
+#m1{
+    position: absolute;
+    top: 201.8pc;
+    left: 8pc;
+    color: black;
+}
+#m2{
+    position: absolute;
+    top: 204pc;
+    left: 8pc;
+    color: black;
+}
+#m3{
+    position: absolute;
+    top: 207pc;
+    left: 8pc;
+    color: black;
+}
+#m4{
+    position: absolute;
+    top: 211pc;
+    left: 8pc;
+    color: black;
+}
+#m5{
+    position: absolute;
+    top: 211pc;
+    left: 20pc;
+    color: black;
+}
+#m6{
+    position: absolute;
+    top: 211pc;
+    left: 35pc;
+    color: black;
+}
+#m7{
+    position: absolute;
+    top: 214pc;
+    left: 8pc;
+    color: white;
+}
+#m8{
+    position: absolute;
+    top: 217pc;
+    left: 8pc;
+    color: white;
+}
+#m9{
+    position: absolute;
+    top: 219pc;
+    left: 8pc;
+    color: white;
+    
+}
+#m7:hover{
+    color: blue;
+    transition: 0.3s;
+}
+#a2:hover{
+    color: blue;
+    transition: 0.3s;
+}
+#r1:hover{
+    color: blue;
+    transition: 0.3s;
+}
+#m2:hover{
+    color: blue;
+    transition: 0.3s;
+}
+#l1:hover{
+    color: blue;
+    transition: 0.3s;
+}
+#c6:hover{
+    color: blue;
+    transition: 0.3s;
+}
+#c10:hover{
+    color: blue;
+    transition: 0.3s;
+
+}
+#c13:hover{
+    color: blue;
+    transition: 0.3s;
+}
+#c18:hover{
+    color: blue;
+    transition: 0.3s;
+
+}
