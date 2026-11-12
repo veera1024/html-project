@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartFarm Andhra Pradesh | Grow Smarter, Harvest Better</title>
+  <meta name="description" content="Practical agricultural knowledge, seasonal crop guides, and smart farming tools designed for farmers across Andhra Pradesh.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+
+  <!-- Sticky Header -->
+  <header class="navbar-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="brand-logo" aria-label="SmartFarm Home">
+          <div class="brand-icon">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 009-9c0-4.97-4.03-9-9-9s-9 4.03-9 9a9 9 0 009 9z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 7v10M8 11l4-4 4 4"/>
+            </svg>
+          </div>
+          <div>
+            SmartFarm
+            <span class="brand-sub">Andhra Pradesh</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="seasons.html" class="nav-link">Seasons</a></li>
+          <li><a href="crops.html" class="nav-link">Crop Library</a></li>
+          <li><a href="cultivation.html" class="nav-link">Cultivation Guide</a></li>
+          <li><a href="tools.html" class="nav-link">Farm Tools</a></li>
+          <li><a href="contact.html" class="nav-link">Kisan Help</a></li>
+          <li>
+            <a href="crops.html" class="nav-cta-btn">
+              <span>Start Growing</span>
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Mobile Hamburger -->
+        <button class="mobile-nav-toggle" aria-label="Toggle Navigation Menu">
+          <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+              <span>Rooted in Andhra Pradesh</span>
+            </div>
+            <h1 class="hero-title">
+              Grow Smarter,<br>
+              <span>Harvest Best.</span>
+            </h1>
+            <p class="hero-desc">
+              Practical agronomic guidance, seasonal roadmaps, and intelligent field decisions for farmers across Andhra Pradesh — from your first seed to your next harvest.
+            </p>
+            <div class="hero-buttons">
+              <a href="crops.html" class="btn btn-primary">
+                <span>Explore Crops</span>
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+                </svg>
+              </a>
+              <a href="cultivation.html" class="btn btn-secondary">
+                <span>Cultivation Guide</span>
+              </a>
+            </div>
+            
+            <div class="hero-stats-row">
+              <div class="stat-item">
+                <span class="stat-num">08+</span>
+                <span class="stat-label">Crop Profiles</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">03</span>
+                <span class="stat-label">Growing Seasons</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">26</span>
+                <span class="stat-label">Districts Covered</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=800&q=80" 
+                   alt="Modern tractor and farmer cultivating green field in Andhra Pradesh" 
+                   class="hero-image">
+            </div>
+
+            <!-- Floating Badges -->
+            <div class="hero-floating-card card-top-right">
+              <div class="floating-icon water">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="floating-title">Irrigation Management</div>
+                <div class="floating-desc">Water Efficiency Protocols</div>
+              </div>
+            </div>
+
+            <div class="hero-floating-card card-bottom-left">
+              <div class="floating-icon crop">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 009-9c0-4.97-4.03-9-9-9s-9 4.03-9 9a9 9 0 009 9z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 7v10M8 11l4-4 4 4"/>
+                </svg>
+              </div>
+              <div>
+                <div class="floating-title">Andhra Kharif 2026</div>
+                <div class="floating-desc">Paddy & Cotton Advisory</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The SmartFarm Approach -->
+    <section class="section-padding approach-section">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag">The SmartFarm Approach</span>
+          <h2 class="section-title">Good for Your Land. Better for Your Future.</h2>
+          <p class="section-subtitle">
+            Farming knowledge should be practical, accessible, and grounded in field science. SmartFarm brings traditional experience and modern agricultural thinking together for farmers across Andhra Pradesh.
+          </p>
+        </div>
+
+        <div class="approach-grid">
+          <!-- Pillar 1 -->
+          <div class="approach-card">
+            <div class="pillar-icon-box pillar-icon-water">
+              <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+              </svg>
+            </div>
+            <h3>Every Drop Matters</h3>
+            <p>
+              Plan irrigation around critical crop stages and weather patterns. Reduce water waste through drip lines, sprinklers, and regular soil tensiometer checks.
+            </p>
+            <ul class="pillar-checklist">
+              <li>
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                Stage-based watering schedules
+              </li>
+              <li>
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                Borewell recharge techniques
+              </li>
+              <li>
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                Plastic & organic mulching
+              </li>
+            </ul>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="approach-card">
+            <div class="pillar-icon-box pillar-icon-soil">
+              <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+              </svg>
+            </div>
+            <h3>Start with Healthy Soil</h3>
+            <p>
+              Use soil testing, farmyard manure, and balanced NPK nutrition to build a resilient foundation that holds moisture and protects roots.
+            </p>
+            <ul class="pillar-checklist">
+              <li>
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                Regular pH & organic carbon testing
+              </li>
+              <li>
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                Green manuring with Dhaincha / Sunnhemp
+              </li>
+              <li>
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                Micro-nutrient correction (Zinc, Iron)
+              </li>
+            </ul>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="approach-card">
+            <div class="pillar-icon-box pillar-icon-confidence">
+              <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+              </svg>
+            </div>
+            <h3>Grow with Confidence</h3>
+            <p>
+              Diversify crops, track operational input costs, and evaluate local Mandi pricing before your produce leaves the farm gate.
+            </p>
+            <ul class="pillar-checklist">
+              <li>
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                Cost-revenue budgeting tools
+              </li>
+              <li>
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                e-NAM market price awareness
+              </li>
+              <li>
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                Crop rotation & risk distribution
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seasons Overview -->
+    <section class="section-padding seasons-section">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag">Work With Nature</span>
+          <h2 class="section-title">Right Crop. Right Season.</h2>
+          <p class="section-subtitle">
+            Plan your next growing cycle around rainfall distributions, temperature shifts, and local canal water availability across Andhra Pradesh.
+          </p>
+        </div>
+
+        <div class="seasons-grid">
+          <!-- 01 Kharif -->
+          <div class="season-card kharif">
+            <div class="season-header-row">
+              <span class="season-number">01</span>
+              <span class="season-badge">Monsoon Sowing</span>
+            </div>
+            <h3 class="season-name">Kharif</h3>
+            <div class="season-subtitle-text">The Southwest Monsoon Crop</div>
+            <div class="season-calendar">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              <span>Jun - Jul Sowing • Sep - Nov Harvest</span>
+            </div>
+            <div class="season-crop-list">
+              <div class="season-crop-label">Primary Crops</div>
+              <div class="season-crop-chips">
+                <span class="crop-chip">Paddy</span>
+                <span class="crop-chip">Cotton</span>
+                <span class="crop-chip">Groundnut</span>
+                <span class="crop-chip">Maize</span>
+                <span class="crop-chip">Redgram</span>
+              </div>
+            </div>
+            <div class="season-advice">
+              Rain-fed opportunity. Plan around the arrival and monsoon distribution in coastal and Rayalaseema districts.
+            </div>
+          </div>
+
+          <!-- 02 Rabi -->
+          <div class="season-card rabi">
+            <div class="season-header-row">
+              <span class="season-number">02</span>
+              <span class="season-badge">Winter Season</span>
+            </div>
+            <h3 class="season-name">Rabi</h3>
+            <div class="season-subtitle-text">The Post-Monsoon / Winter Crop</div>
+            <div class="season-calendar">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              <span>Oct - Dec Sowing • Feb - Apr Harvest</span>
+            </div>
+            <div class="season-crop-list">
+              <div class="season-crop-label">Primary Crops</div>
+              <div class="season-crop-chips">
+                <span class="crop-chip">Bengal Gram</span>
+                <span class="crop-chip">Rabi Maize</span>
+                <span class="crop-chip">Blackgram</span>
+                <span class="crop-chip">Chillies</span>
+              </div>
+            </div>
+            <div class="season-advice">
+              Cooler growing months. Conserve residual soil moisture and plan around winter reservoir release schedules.
+            </div>
+          </div>
+
+          <!-- 03 Summer -->
+          <div class="season-card summer">
+            <div class="season-header-row">
+              <span class="season-number">03</span>
+              <span class="season-badge">Short Window</span>
+            </div>
+            <h3 class="season-name">Summer (Zaid)</h3>
+            <div class="season-subtitle-text">The Short Hot Season Crop</div>
+            <div class="season-calendar">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              <span>Jan - Mar Sowing • Apr - Jun Harvest</span>
+            </div>
+            <div class="season-crop-list">
+              <div class="season-crop-label">Primary Crops</div>
+              <div class="season-crop-chips">
+                <span class="crop-chip">Watermelon</span>
+                <span class="crop-chip">Greengram</span>
+                <span class="crop-chip">Sesamum</span>
+                <span class="crop-chip">Vegetables</span>
+              </div>
+            </div>
+            <div class="season-advice">
+              Water availability is decisive. Choose short-duration cultivars where dependable borewells or lift irrigation exist.
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem;">
+          <a href="seasons.html" class="btn btn-secondary">
+            <span>Explore Full Seasonal Calendar</span>
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Crop Library Feature Preview -->
+    <section class="section-padding" style="background-color: #ffffff;">
+      <div class="container">
+        <div style="display: flex; flex-direction: column; md:flex-row; justify-content: space-between; align-items: flex-start; gap: 1rem; margin-bottom: 2rem;">
+          <div>
+            <span class="section-tag">The Crop Library</span>
+            <h2 class="section-title">Find Your Next Crop</h2>
+            <p class="section-subtitle">
+              A field-level starting point for choosing what to grow. Review water requirements, soil compatibility, and harvest timelines.
+            </p>
+          </div>
+          <div>
+            <a href="crops.html" class="btn btn-primary">
+              <span>View All 8+ Crops</span>
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Rendered by crops.js -->
+        <div id="cropsContainer" class="crops-grid"></div>
+      </div>
+    </section>
+
+    <!-- 6 Cultivation Steps -->
+    <section class="section-padding cultivation-section">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag">Proven Agronomy</span>
+          <h2 class="section-title">Cultivation From Seed to Harvest</h2>
+          <p class="section-subtitle">
+            Follow our six practical stages to optimize yields, prevent pest outbreaks, and protect the market value of your harvest.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-card-num">01</div>
+            <h3>Know Your Soil</h3>
+            <p>
+              Test representative soil samples. Review pH, organic carbon, micro-nutrients, and drainage before investing in high-value seeds.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-card-num">02</div>
+            <h3>Prepare & Plant</h3>
+            <p>
+              Deep summer plowing destroys weed seeds and soil-borne pupae. Sow certified seeds treated with bio-fungicides at the right depth.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-card-num">03</div>
+            <h3>Help It Establish</h3>
+            <p>
+              Monitor germination within 7-10 days, fill gaps early, and maintain light moisture so young root networks penetrate vigorously.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-card-num">04</div>
+            <h3>Observe & Nurture</h3>
+            <p>
+              Practice Integrated Pest Management (IPM). Inspect undersides of leaves weekly and seek KVK advice before spraying insecticides.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-card-num">05</div>
+            <h3>Harvest at Right Time</h3>
+            <p>
+              Look for physiological maturity indicators like pod color and grain hardness. Harvest during dry weather to curb post-harvest fungal rot.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-card-num">06</div>
+            <h3>Protect the Value</h3>
+            <p>
+              Sun-dry produce to crop-specific safe moisture levels (10-12%). Clean, grade, and store in airtight bags to secure premium Mandi rates.
+            </p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem;">
+          <a href="cultivation.html" class="btn btn-secondary">
+            <span>Read Complete 6-Stage Field Handbook</span>
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Tools Showcase -->
+    <section class="section-padding" style="background-color: #ffffff;">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag">Interactive Ag-Tech</span>
+          <h2 class="section-title">A Clear Picture of Your Farm</h2>
+          <p class="section-subtitle">
+            Experiment with our interactive simulators designed to illustrate district-level crop matching, weather outlooks, and farm budgeting.
+          </p>
+        </div>
+
+        <div class="tools-grid">
+          <!-- Tool 1: Matchmaker -->
+          <div class="tool-card">
+            <span class="tool-badge">Matchmaker</span>
+            <h3>What Could You Grow?</h3>
+            <p class="tool-subtext">Find crops aligned with your soil, season, and district.</p>
+
+            <div class="form-group">
+              <label class="form-label" for="advisorSoil">Soil Type</label>
+              <select id="advisorSoil" class="form-select">
+                <option value="sandy">Well-drained Sandy Loam</option>
+                <option value="clay" selected>Clay Loam / Heavy Soil</option>
+                <option value="black">Deep Black Cotton Soil</option>
+                <option value="red">Red Sandy Soil</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="advisorSeason">Season / Irrigation</label>
+              <select id="advisorSeason" class="form-select">
+                <option value="kharif" selected>Kharif (Monsoon / Rainfed)</option>
+                <option value="rabi">Rabi (Winter Conserved)</option>
+                <option value="summer">Summer (Borewell / Drip)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="advisorDistrict">District</label>
+              <select id="advisorDistrict" class="form-select">
+                <option value="guntur" selected>Guntur</option>
+                <option value="anantapur">Anantapur</option>
+                <option value="kurnool">Kurnool</option>
+                <option value="krishna">Krishna</option>
+                <option value="godavari">East Godavari</option>
+              </select>
+            </div>
+
+            <div class="tool-result-box">
+              <div class="tool-result-header">Recommended Crop to Explore</div>
+              <div class="tool-result-title" id="advisorResultCrop">Paddy (Rice)</div>
+              <div style="font-size: 0.8125rem; color: #a7f3d0; margin-bottom: 0.35rem;" id="advisorResultDuration">120 - 145 Days</div>
+              <p class="tool-result-desc" id="advisorResultAdvice">Clay loam holds required standing water. Recommended for Guntur conditions.</p>
+            </div>
+            <div class="tool-disclaimer">Fixed demonstration model. Confirm suitability with your local agricultural officer.</div>
+          </div>
+
+          <!-- Tool 2: Weather & Mandi -->
+          <div class="tool-card">
+            <span class="tool-badge">Market & Climate</span>
+            <h3>Know the Conditions</h3>
+            <p class="tool-subtext">Simulated district weather and AP Mandi price trends.</p>
+
+            <div class="form-group">
+              <label class="form-label" for="weatherDistrictSelect">Select AP District Market</label>
+              <select id="weatherDistrictSelect" class="form-select">
+                <option value="guntur" selected>Guntur (Mirchi Yard)</option>
+                <option value="kurnool">Kurnool (Groundnut Hub)</option>
+                <option value="krishna">Krishna (Vijayawada Paddy)</option>
+                <option value="anantapur">Anantapur (Rainfed Zone)</option>
+              </select>
+            </div>
+
+            <div class="tool-result-box">
+              <div class="tool-result-header">Simulated Conditions</div>
+              <div class="tool-stat-pair">
+                <span>District Temp:</span>
+                <span id="simTemp" style="font-weight: 700;">31°C</span>
+              </div>
+              <div class="tool-stat-pair">
+                <span>Rainfall Index:</span>
+                <span id="simRain" style="font-weight: 700;">8 mm</span>
+              </div>
+              <div class="tool-stat-pair">
+                <span>Key Commodity:</span>
+                <span id="simCommodity" style="font-weight: 700;">Red Chilli (Teja)</span>
+              </div>
+              <div class="tool-stat-pair highlight">
+                <span>Mandi Price:</span>
+                <span id="simPrice">₹18,500 / Quintal</span>
+              </div>
+              <div class="tool-stat-pair">
+                <span>Demand Outlook:</span>
+                <span id="simTrend" style="color: #6ee7b7;">Steady Demand</span>
+              </div>
+            </div>
+            <div class="tool-disclaimer">Fictional demonstration values, not live feeds. Always check IMD and e-NAM for official rates.</div>
+          </div>
+
+          <!-- Tool 3: Profit Calculator -->
+          <div class="tool-card">
+            <span class="tool-badge">Finance</span>
+            <h3>Understand Your Returns</h3>
+            <p class="tool-subtext">Quick interactive calculator for crop revenues and expenses.</p>
+
+            <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+              <div>
+                <label class="form-label" for="calcAcres">Acres</label>
+                <input type="number" id="calcAcres" class="form-input" value="1" min="1" max="50">
+              </div>
+              <div>
+                <label class="form-label" for="calcYield">Yield (Kg/Acre)</label>
+                <input type="number" id="calcYield" class="form-input" value="2000" step="50">
+              </div>
+            </div>
+
+            <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+              <div>
+                <label class="form-label" for="calcRate">Price (₹/Kg)</label>
+                <input type="number" id="calcRate" class="form-input" value="25" step="1">
+              </div>
+              <div>
+                <label class="form-label" for="calcExpenses">Cost (₹/Acre)</label>
+                <input type="number" id="calcExpenses" class="form-input" value="35000" step="500">
+              </div>
+            </div>
+
+            <div class="tool-result-box">
+              <div class="tool-result-header">Estimated Farm Financials</div>
+              <div class="tool-stat-pair">
+                <span>Gross Revenue:</span>
+                <span id="calcRevenue" style="font-weight: 700;">₹50,000</span>
+              </div>
+              <div class="tool-stat-pair">
+                <span>Total Costs:</span>
+                <span id="calcTotalExpenses" style="font-weight: 700;">₹35,000</span>
+              </div>
+              <div class="tool-stat-pair highlight">
+                <span>Estimated Margin:</span>
+                <span id="calcSurplus">₹15,000 Surplus</span>
+              </div>
+            </div>
+            <div class="tool-disclaimer">Worked financial model. Actual margins vary by weather, transport, and labor rates.</div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem;">
+          <a href="tools.html" class="btn btn-secondary">
+            <span>Open Advanced Farm Calculators</span>
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner CTA -->
+    <section class="container" style="margin-bottom: 4.5rem;">
+      <div class="cta-banner">
+        <h2>Local Knowledge. Stronger Harvests.</h2>
+        <p>
+          Join thousands of progressive farmers across Andhra Pradesh who rely on verified agronomic principles, proper soil care, and proactive pest monitoring.
+        </p>
+        <div class="cta-banner-buttons">
+          <a href="crops.html" class="btn btn-white">Browse Crop Profiles</a>
+          <a href="contact.html" class="btn btn-outline-white">District KVK Directory</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- External Agricultural Portals -->
+    <section class="section-padding resources-section">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag">Government & University Links</span>
+          <h2 class="section-title">Official Agricultural Portals</h2>
+          <p class="section-subtitle">
+            SmartFarm connects you to verified Indian and Andhra Pradesh government agricultural bodies for live advisory, official forecasts, and procurement.
+          </p>
+        </div>
+
+        <div class="resource-cards-grid">
+          <div class="resource-card">
+            <h4>ANGRAU University</h4>
+            <p>Acharya N.G. Ranga Agricultural University provides scientific crop research, package of practices, and university-certified seed varieties for AP.</p>
+            <a href="https://angrau.ac.in/" target="_blank" rel="noopener noreferrer" class="resource-link">
+              <span>Visit ANGRAU Portal</span>
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            </a>
+          </div>
+
+          <div class="resource-card">
+            <h4>IMD Mausam Weather</h4>
+            <p>The India Meteorological Department provides localized agro-meteorological advisories, monsoon track bulletins, and rainfall forecasts.</p>
+            <a href="https://mausam.imd.gov.in/" target="_blank" rel="noopener noreferrer" class="resource-link">
+              <span>Check IMD Weather</span>
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            </a>
+          </div>
+
+          <div class="resource-card">
+            <h4>e-NAM Mandi Portal</h4>
+            <p>National Agriculture Market connects AP agricultural mandis for transparent price discovery and online trading of grains, oilseeds, and spices.</p>
+            <a href="https://www.enam.gov.in/" target="_blank" rel="noopener noreferrer" class="resource-link">
+              <span>Explore e-NAM Mandis</span>
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal Dialog for Crop Details -->
+  <div id="cropModal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-content">
+      <button id="modalCloseBtn" class="modal-close-btn" aria-label="Close details">&times;</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer-main">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <div class="brand-icon">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 009-9c0-4.97-4.03-9-9-9s-9 4.03-9 9a9 9 0 009 9z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 7v10M8 11l4-4 4 4"/>
+              </svg>
+            </div>
+            <span>SmartFarm</span>
+          </a>
+          <p class="footer-brand-desc">
+            Grow smarter, harvest better. An educational agricultural guide and field resource for farmers across Andhra Pradesh.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About SmartFarm</a></li>
+            <li><a href="seasons.html">Growing Seasons</a></li>
+            <li><a href="crops.html">Crop Library</a></li>
+            <li><a href="cultivation.html">Cultivation Guide</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Tools & Resources</h4>
+          <ul>
+            <li><a href="tools.html">Crop Matchmaker</a></li>
+            <li><a href="tools.html">Profit Calculator</a></li>
+            <li><a href="tools.html">Weather & Mandi</a></li>
+            <li><a href="contact.html">KVK Helpline</a></li>
+            <li><a href="https://angrau.ac.in/" target="_blank" rel="noopener">ANGRAU Portal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Major Crops</h4>
+          <ul>
+            <li><a href="crops.html">Paddy (Rice)</a></li>
+            <li><a href="crops.html">Groundnut</a></li>
+            <li><a href="crops.html">Cotton (Kapas)</a></li>
+            <li><a href="crops.html">Red Chilli (Mirchi)</a></li>
+            <li><a href="crops.html">Bengal Gram</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-disclaimer">
+        <strong>Important Advisory Disclaimer:</strong> SmartFarm is an educational and informational platform designed to illustrate sound agronomic concepts. It is not a substitute for formal on-site agricultural advisory. Always consult your district Agricultural Officer (AO), Rythu Bharosa Kendra (RBK), or nearest Krishi Vigyan Kendra (KVK) for district-specific pest treatments and seed varieties.
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 SmartFarm Andhra Pradesh. Open knowledge initiative. Photography licensed via Unsplash.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="about.html">About</a>
+          <a href="cultivation.html">Cultivation</a>
+          <a href="contact.html">Contact Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/crops.js"></script>
+  <script src="assets/js/tools.js"></script>
+</body>
+</html>

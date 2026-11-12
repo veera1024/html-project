@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Farm Tools & Calculators | SmartFarm Andhra Pradesh</title>
+  <meta name="description" content="Interactive agricultural calculators for crop suitability, farm profit estimation, mandi pricing, and seed rates.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+
+  <!-- Sticky Navbar -->
+  <header class="navbar-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="brand-logo" aria-label="SmartFarm Home">
+          <div class="brand-icon">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 009-9c0-4.97-4.03-9-9-9s-9 4.03-9 9a9 9 0 009 9z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 7v10M8 11l4-4 4 4"/>
+            </svg>
+          </div>
+          <div>
+            SmartFarm
+            <span class="brand-sub">Andhra Pradesh</span>
+          </div>
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="seasons.html" class="nav-link">Seasons</a></li>
+          <li><a href="crops.html" class="nav-link">Crop Library</a></li>
+          <li><a href="cultivation.html" class="nav-link">Cultivation Guide</a></li>
+          <li><a href="tools.html" class="nav-link active">Farm Tools</a></li>
+          <li><a href="contact.html" class="nav-link">Kisan Help</a></li>
+          <li>
+            <a href="crops.html" class="nav-cta-btn">
+              <span>Start Growing</span>
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <button class="mobile-nav-toggle" aria-label="Toggle Navigation Menu">
+          <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Subpage Hero -->
+    <section class="subpage-hero">
+      <div class="container">
+        <span class="section-tag" style="background: rgba(255,255,255,0.12); color: #fff; border-color: rgba(255,255,255,0.2);">Interactive Decision Support</span>
+        <h1 class="subpage-hero-title">Smart Agricultural Tools</h1>
+        <p class="subpage-hero-desc">
+          Plan with purpose. Explore crop matching, simulate mandi price trends, and calculate farm profit margins before investing.
+        </p>
+      </div>
+    </section>
+
+    <!-- Main Tools Suite -->
+    <section class="section-padding" style="background-color: #fafbfc;">
+      <div class="container">
+        <div class="tools-grid">
+          
+          <!-- Tool 1: Crop Advisor -->
+          <div class="tool-card">
+            <span class="tool-badge">Crop Advisor</span>
+            <h3>What Could You Grow?</h3>
+            <p class="tool-subtext">Match your soil, season, and district with suitable crops.</p>
+
+            <div class="form-group">
+              <label class="form-label" for="advisorSoil">Soil Type</label>
+              <select id="advisorSoil" class="form-select">
+                <option value="sandy">Well-drained Sandy Loam</option>
+                <option value="clay" selected>Clay Loam / Heavy Soil</option>
+                <option value="black">Deep Black Cotton Soil</option>
+                <option value="red">Red Sandy Soil</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="advisorSeason">Season / Irrigation</label>
+              <select id="advisorSeason" class="form-select">
+                <option value="kharif" selected>Kharif (Monsoon / Rainfed)</option>
+                <option value="rabi">Rabi (Winter Conserved)</option>
+                <option value="summer">Summer (Borewell / Drip)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="advisorDistrict">District in AP</label>
+              <select id="advisorDistrict" class="form-select">
+                <option value="guntur" selected>Guntur</option>
+                <option value="anantapur">Anantapur</option>
+                <option value="kurnool">Kurnool</option>
+                <option value="krishna">Krishna</option>
+                <option value="godavari">East Godavari</option>
+              </select>
+            </div>
+
+            <div class="tool-result-box">
+              <div class="tool-result-header">Recommended Crop to Explore</div>
+              <div class="tool-result-title" id="advisorResultCrop">Paddy (Rice)</div>
+              <div style="font-size: 0.8125rem; color: #a7f3d0; margin-bottom: 0.35rem;" id="advisorResultDuration">120 - 145 Days</div>
+              <p class="tool-result-desc" id="advisorResultAdvice">Clay loam holds required standing water. Recommended for Guntur conditions.</p>
+            </div>
+            <div class="tool-disclaimer">Demonstration simulation. Confirm local variety with your nearest KVK or RBK.</div>
+          </div>
+
+          <!-- Tool 2: Weather & Mandi Simulator -->
+          <div class="tool-card">
+            <span class="tool-badge">Market Intelligence</span>
+            <h3>Know the Conditions</h3>
+            <p class="tool-subtext">Simulated district weather and AP agricultural trading trends.</p>
+
+            <div class="form-group">
+              <label class="form-label" for="weatherDistrictSelect">Select AP District Market</label>
+              <select id="weatherDistrictSelect" class="form-select">
+                <option value="guntur" selected>Guntur (Mirchi Yard)</option>
+                <option value="kurnool">Kurnool (Groundnut Market)</option>
+                <option value="krishna">Krishna (Vijayawada Paddy)</option>
+                <option value="anantapur">Anantapur (Rainfed Zone)</option>
+                <option value="godavari">East Godavari (Kakinada Port)</option>
+              </select>
+            </div>
+
+            <div class="tool-result-box">
+              <div class="tool-result-header">Market Snapshot</div>
+              <div class="tool-stat-pair">
+                <span>District Temp:</span>
+                <span id="simTemp" style="font-weight: 700;">31°C</span>
+              </div>
+              <div class="tool-stat-pair">
+                <span>Rainfall Index:</span>
+                <span id="simRain" style="font-weight: 700;">8 mm</span>
+              </div>
+              <div class="tool-stat-pair">
+                <span>Primary Commodity:</span>
+                <span id="simCommodity" style="font-weight: 700;">Red Chilli (Teja)</span>
+              </div>
+              <div class="tool-stat-pair highlight">
+                <span>Simulated Price:</span>
+                <span id="simPrice">₹18,500 / Quintal</span>
+              </div>
+              <div class="tool-stat-pair">
+                <span>Demand Outlook:</span>
+                <span id="simTrend" style="color: #6ee7b7;">Steady Demand</span>
+              </div>
+            </div>
+            <div class="tool-disclaimer">Fictional demonstration values, not current trading bids. Check e-NAM for official rates.</div>
+          </div>
+
+          <!-- Tool 3: Farm Returns Estimator -->
+          <div class="tool-card">
+            <span class="tool-badge">Farm Financials</span>
+            <h3>Understand Your Returns</h3>
+            <p class="tool-subtext">Budget your harvest revenue, input costs, and estimated surplus.</p>
+
+            <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+              <div>
+                <label class="form-label" for="calcAcres">Acres</label>
+                <input type="number" id="calcAcres" class="form-input" value="1" min="1" max="100">
+              </div>
+              <div>
+                <label class="form-label" for="calcYield">Yield (Kg/Acre)</label>
+                <input type="number" id="calcYield" class="form-input" value="2000" step="50">
+              </div>
+            </div>
+
+            <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+              <div>
+                <label class="form-label" for="calcRate">Price (₹/Kg)</label>
+                <input type="number" id="calcRate" class="form-input" value="25" step="1">
+              </div>
+              <div>
+                <label class="form-label" for="calcExpenses">Costs (₹/Acre)</label>
+                <input type="number" id="calcExpenses" class="form-input" value="35000" step="500">
+              </div>
+            </div>
+
+            <div class="tool-result-box">
+              <div class="tool-result-header">Estimated Farm Financials</div>
+              <div class="tool-stat-pair">
+                <span>Gross Revenue:</span>
+                <span id="calcRevenue" style="font-weight: 700;">₹50,000</span>
+              </div>
+              <div class="tool-stat-pair">
+                <span>Total Costs:</span>
+                <span id="calcTotalExpenses" style="font-weight: 700;">₹35,000</span>
+              </div>
+              <div class="tool-stat-pair highlight">
+                <span>Estimated Margin:</span>
+                <span id="calcSurplus">₹15,000 Surplus</span>
+              </div>
+            </div>
+            <div class="tool-disclaimer">Worked financial model. Actual margins vary by weather, transport, and labor rates.</div>
+          </div>
+
+        </div>
+
+        <!-- Additional Tool: Seed Rate & Spacing Guide -->
+        <div style="background: white; border: 1px solid var(--slate-200); border-radius: var(--radius-lg); padding: 2rem; margin-top: 3rem; box-shadow: var(--shadow-xs);">
+          <span class="section-tag">Quick Agronomy Reference</span>
+          <h3 style="font-size: 1.45rem; font-weight: 800; color: var(--slate-900); margin-bottom: 1.25rem;">
+            Standard Seed Rates & Spacing in Andhra Pradesh
+          </h3>
+          
+          <div style="overflow-x: auto;">
+            <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.875rem;">
+              <thead>
+                <tr style="border-bottom: 2px solid var(--slate-200); background: var(--slate-50);">
+                  <th style="padding: 0.85rem 1rem; color: var(--slate-900);">Crop</th>
+                  <th style="padding: 0.85rem 1rem; color: var(--slate-900);">Seed Rate / Acre</th>
+                  <th style="padding: 0.85rem 1rem; color: var(--slate-900);">Recommended Spacing</th>
+                  <th style="padding: 0.85rem 1rem; color: var(--slate-900);">Depth of Sowing</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style="border-bottom: 1px solid var(--slate-200);">
+                  <td style="padding: 0.85rem 1rem; font-weight: 700; color: var(--slate-900);">Paddy (Transplanted)</td>
+                  <td style="padding: 0.85rem 1rem; color: var(--slate-600);">20 – 25 kg</td>
+                  <td style="padding: 0.85rem 1rem; color: var(--slate-600);">15 cm x 15 cm or 20 cm x 15 cm</td>
+                  <td style="padding: 0.85rem 1rem; color: var(--slate-600);">2 – 3 cm (shallow)</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--slate-200);">
+                  <td style="padding: 0.85rem 1rem; font-weight: 700; color: var(--slate-900);">Groundnut</td>
+                  <td style="padding: 0.85rem 1rem; color: var(--slate-600);">60 – 70 kg pods</td>
+                  <td style="padding: 0.85rem 1rem; color: var(--slate-600);">30 cm x 10 cm</td>
+                  <td style="padding: 0.85rem 1rem; color: var(--slate-600);">5 cm</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--slate-200);">
+                  <td style="padding: 0.85rem 1rem; font-weight: 700; color: var(--slate-900);">Bt Cotton</td>
+                  <td style="padding: 0.85rem 1rem; color: var(--slate-600);">1.5 – 2.0 packets (approx. 900g)</td>
+                  <td style="padding: 0.85rem 1rem; color: var(--slate-600);">90 cm x 60 cm or 120 cm x 45 cm</td>
+                  <td style="padding: 0.85rem 1rem; color: var(--slate-600);">3 – 4 cm</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--slate-200);">
+                  <td style="padding: 0.85rem 1rem; font-weight: 700; color: var(--slate-900);">Red Chilli</td>
+                  <td style="padding: 0.85rem 1rem; color: var(--slate-600);">250 – 300 g (nursery seedlings)</td>
+                  <td style="padding: 0.85rem 1rem; color: var(--slate-600);">60 cm x 45 cm</td>
+                  <td style="padding: 0.85rem 1rem; color: var(--slate-600);">Transplanted at collar depth</td>
+                </tr>
+                <tr>
+                  <td style="padding: 0.85rem 1rem; font-weight: 700; color: var(--slate-900);">Bengal Gram</td>
+                  <td style="padding: 0.85rem 1rem; color: var(--slate-600);">20 – 25 kg</td>
+                  <td style="padding: 0.85rem 1rem; color: var(--slate-600);">30 cm x 10 cm</td>
+                  <td style="padding: 0.85rem 1rem; color: var(--slate-600);">5 – 7 cm (into moisture)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-main">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <div class="brand-icon">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 009-9c0-4.97-4.03-9-9-9s-9 4.03-9 9a9 9 0 009 9z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 7v10M8 11l4-4 4 4"/>
+              </svg>
+            </div>
+            <span>SmartFarm</span>
+          </a>
+          <p class="footer-brand-desc">
+            Grow smarter, harvest better. An educational agricultural guide and field resource for farmers across Andhra Pradesh.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About SmartFarm</a></li>
+            <li><a href="seasons.html">Growing Seasons</a></li>
+            <li><a href="crops.html">Crop Library</a></li>
+            <li><a href="cultivation.html">Cultivation Guide</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Tools & Resources</h4>
+          <ul>
+            <li><a href="tools.html">Crop Matchmaker</a></li>
+            <li><a href="tools.html">Profit Calculator</a></li>
+            <li><a href="tools.html">Weather & Mandi</a></li>
+            <li><a href="contact.html">KVK Helpline</a></li>
+            <li><a href="https://angrau.ac.in/" target="_blank" rel="noopener">ANGRAU Portal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Major Crops</h4>
+          <ul>
+            <li><a href="crops.html">Paddy (Rice)</a></li>
+            <li><a href="crops.html">Groundnut</a></li>
+            <li><a href="crops.html">Cotton (Kapas)</a></li>
+            <li><a href="crops.html">Red Chilli (Mirchi)</a></li>
+            <li><a href="crops.html">Bengal Gram</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 SmartFarm Andhra Pradesh. Open knowledge initiative. Photography licensed via Unsplash.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="about.html">About</a>
+          <a href="cultivation.html">Cultivation</a>
+          <a href="contact.html">Contact Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/tools.js"></script>
+</body>
+</html>

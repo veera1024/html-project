@@ -1,0 +1,7 @@
+/* ==========================================================================
+   SMARTFARM - ROOT STYLE ENTRYPOINT
+   Imports modern modular design tokens and components
+   ========================================================================== */
+
+@import url('assets/css/main.css');
+@import url('assets/css/components.css');

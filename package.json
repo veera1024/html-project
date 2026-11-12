@@ -1,0 +1,20 @@
+{
+  "name": "smartfarm-andhra-pradesh",
+  "version": "1.0.0",
+  "description": "Smart Agriculture & Farmer Support Web Platform for Andhra Pradesh",
+  "homepage": "https://smartfarm-ap.vercel.app",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "agriculture",
+    "farming",
+    "andhra-pradesh",
+    "krishi",
+    "agritech",
+    "crops"
+  ],
+  "author": "SmartFarm Team",
+  "license": "MIT"
+}
+
